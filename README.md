@@ -23,7 +23,7 @@
 
 ### 首次使用
 复制config.template.sh文件到config.sh  
-cp config.template.sh config.sh  
+    cp config.template.sh config.sh  
 
 并修改config.sh配置文件
 1.修改shadowsocks_开头配置信息为shadowsocks的配置信息  
@@ -31,14 +31,14 @@ cp config.template.sh config.sh
 3.修改网络配置,修改网段为路由器dhcp的网段，设置local dns dns_2 gost的ip地址，如果和已经知ip不重复可不设置  
 
 ### 初始化
-bash start.sh  
+    bash start.sh  
 
 ### 虚拟机重启，启动服务
-bash docker_service.sh start  
+    bash docker_service.sh start  
 
 ### 密码，ip变更
 更新config.sh里的密码，或者更config.sh里的局域网ip，并运行重启命令  
-bash docker_service.sh restart  
+    bash docker_service.sh restart  
 
 
 ### 客户机设置

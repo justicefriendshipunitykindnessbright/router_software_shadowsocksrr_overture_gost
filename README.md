@@ -38,7 +38,9 @@
 
 ### 密码，ip变更
 更新config.sh里的密码，或者更config.sh里的局域网ip，并运行重启命令  
-    bash docker_service.sh restart  
+```
+bash docker_service.sh restart  
+```
 
 
 ### 客户机设置

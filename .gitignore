@@ -1,0 +1,7 @@
+*.log
+/*local.sh
+/*gost.sh
+app/dns/config.json
+*.swp
+*.swo
+config.sh

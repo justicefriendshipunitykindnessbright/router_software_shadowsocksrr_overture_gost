@@ -51,7 +51,7 @@ ip，子网掩码不变
 请勿必卸载ipv6组件，由于没有代理ipv6，打开ipv6 dhcp仍然会导致ip泄漏  
 
 
-###感谢
+### 感谢
 https://github.com/shadowsocks/shadowsocks  
 https://github.com/shadowsocksrr/shadowsocksr  
 https://github.com/ginuerzh/gost  

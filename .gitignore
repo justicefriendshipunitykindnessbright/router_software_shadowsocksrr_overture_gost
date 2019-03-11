@@ -1,6 +1,6 @@
 *.log
-/*local.sh
-/*gost.sh
+app/local/local.sh
+app/gost/gost.sh
 app/dns/config.json
 *.swp
 *.swo

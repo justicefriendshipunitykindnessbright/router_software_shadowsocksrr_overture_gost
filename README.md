@@ -24,7 +24,7 @@
 ### 首次使用
 复制config.template.sh文件到config.sh  
 ```
-    cp config.template.sh config.sh  
+cp config.template.sh config.sh  
 ```
 
 并修改config.sh配置文件  

@@ -1,5 +1,5 @@
 #!/bin/bash
-# justicefriendshipunitykindnessbright@protonmail.com
+# justicefriendshipunitykindnessbright_2@protonmail.com
 
 
 #shadowsocks 配置信息

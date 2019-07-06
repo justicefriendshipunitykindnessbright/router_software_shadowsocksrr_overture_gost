@@ -179,3 +179,10 @@ function docker_network_create(){
 	--gateway=${docker_gateway} \
 	-o parent=${parent} ${docker_network_name}
 }
+
+#删除网络
+function docker_network_rm(){
+	docker network rm ${docker_network_name}
+}
+
+

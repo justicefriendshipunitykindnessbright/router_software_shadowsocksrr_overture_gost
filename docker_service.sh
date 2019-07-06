@@ -11,6 +11,9 @@ function docker_restart(){
 
         systemctl start docker.service
 
+	#删除网络再创建
+	docker_network_rm
+	docker_network_create
 	#重建配置文件
 	gensh_local
 	gensh_dns

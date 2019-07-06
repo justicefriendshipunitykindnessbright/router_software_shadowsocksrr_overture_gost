@@ -11,6 +11,7 @@ setenforce 0
 bash install_docker.sh
 #创建网络
 #bash docker_network_create.sh
+. config.sh
 . docker_function.sh
 docker_network_create
 #启动容器

@@ -11,9 +11,11 @@ shadowsocks_O=auth_chain_f
 shadowsocks_o=plain
 shadowsocks_l=1081
 shadowsocks_b=0.0.0.0
+#程序运行路径
+command_path=`pwd`
 
 #应用路径
-app_path=/root/centos/app
+app_path=${command_path}/app
 
 #shadowsocks程序路径
 local_path=${app_path}local/local

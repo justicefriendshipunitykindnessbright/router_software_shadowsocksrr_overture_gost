@@ -9,7 +9,7 @@ function docker_restart(){
 	. config.sh
 	. docker_function.sh
 
-	service docker start
+        systemctl start docker.service
 
 	#重建配置文件
 	gensh_local
@@ -24,7 +24,7 @@ function docker_restart(){
 function docker_start(){
 	. config.sh
 	. docker_function.sh
-	service docker start
+        systemctl start docker.service
 
 	gensh_local
 	gensh_dns
@@ -36,14 +36,14 @@ function docker_start(){
 #停止服务
 function docker_stop(){
 	. config.sh
-	service docker start
+        systemctl start docker.service
 	docker stop ${docker_local_name} ${docker_dns_name} ${docker_dns_2_name} ${docker_gost_name}
 }
 
 #删除
 function docker_rm(){
 	. config.sh
-	service docker start
+        systemctl start docker.service
 	#停止服务并删除虚拟机
 	docker stop ${docker_local_name} ${docker_dns_name} ${docker_dns_2_name} ${docker_gost_name}
 	docker rm ${docker_local_name} ${docker_dns_name} ${docker_dns_2_name} ${docker_gost_name}
@@ -51,7 +51,7 @@ function docker_rm(){
 
 #创建
 function docker_create(){
-	service docker start
+        systemctl start docker.service
 	. config.sh
 	. docker_function.sh
 

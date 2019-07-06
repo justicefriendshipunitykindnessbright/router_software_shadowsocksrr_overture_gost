@@ -70,7 +70,9 @@ function docker_create(){
 
 
 #服务
-if [ $1 == "start" ] ; then
+if [  -n $1 ] ; then
+	echo "参数可以是(start|stop|restart|rm|create)之一"
+elif [ $1 == "start" ] ; then
 	docker_start
 	echo "start"
 elif [ $1 == "stop" ] ; then
